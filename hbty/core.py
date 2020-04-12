@@ -1,3 +1,6 @@
+from hbty.drawer import save_with_message
+from hbty.image_source import get_image
+
 import click
 
 
@@ -13,4 +16,5 @@ def cli(keyword, message, to):
 
 
 def birthday_card_generate(keyword, message, to):
-    pass
+    with get_image(keyword) as f:
+        save_with_message(f, message, to)
