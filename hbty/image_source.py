@@ -41,7 +41,7 @@ class _LoremFlickr(RemoteImage):
 KeywordImage = _LoremFlickr
 
 
-def select_image_sauce(keyword):
+def choose_image_source(keyword):
     """最適なイメージソースクラスを返す"""
     if keyword.startswith(('http://', 'https://')):
         return RemoteImage(keyword)
@@ -52,5 +52,4 @@ def select_image_sauce(keyword):
 
 
 def get_image(keyword):
-    """画像のファイルオブジェクトを返す"""
-    return select_image_sauce(keyword)
+    return choose_image_source(keyword).get_image()
