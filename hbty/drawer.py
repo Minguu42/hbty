@@ -15,6 +15,7 @@ OUTPUT_FORMAT = 'PNG'
 
 
 def save_with_message(fp, color, to):
+    """画像にメッセージを載せて保存する"""
     happy = 'HAPPY'
     birthday = 'BIRTH DAY'
     to_you = 'TO ' + to + '!!'
@@ -30,6 +31,7 @@ def save_with_message(fp, color, to):
 
 def text_draw(image, draw, text, height_position, color='random',
               font_size=80):
+    """テキストを画像に描写する"""
     image_width, image_height = image.size
 
     font = ImageFont.truetype(FONT_NAME, font_size)
@@ -47,6 +49,7 @@ def text_draw(image, draw, text, height_position, color='random',
 
 
 def check_color(color):
+    """フォントの色の決定する"""
     if color.lower() in tuple(FONT_COLORS.keys()):
         return FONT_COLORS[color.lower()]
     else:

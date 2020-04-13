@@ -14,7 +14,7 @@ import click
 def cli(keyword, color, to):
     """バースデーカード作成ツール"""
     birthday_card_generate(keyword, color, to)
-    click.echo('動作確認')
+    click.echo('画像を作成しました。')
 
 
 def birthday_card_generate(keyword, color, to):
