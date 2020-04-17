@@ -13,6 +13,7 @@ setup(
     description='This is a birthday card generator',
     long_description=open('README.md').read(),
     logn_description_content_type='text/markdown',
+    keywords='birthday',
 
     python_requires='~3.7',
 
