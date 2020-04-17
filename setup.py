@@ -15,7 +15,7 @@ setup(
     logn_description_content_type='text/markdown',
     keywords='birthday',
 
-    python_requires='~3.7',
+    python_requires='~=3.7',
 
     classifiers=[
         'License :: OSI Approved :: MIT License',
