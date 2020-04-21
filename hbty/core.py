@@ -5,10 +5,10 @@ import click
 
 
 @click.command()
-@click.option('--color', '-c',
+@click.option('--color', '-C',
               default='random',
               help='メッセージの色: white, red, blue, green, yellow')
-@click.option('-to', default='YOU', show_default=True,
+@click.option('--to', default='YOU', show_default=True,
               help='Happy Birthday to の後に入れる文字')
 @click.argument('keyword')
 def cli(keyword, color, to):
