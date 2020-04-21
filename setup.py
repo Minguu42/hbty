@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='hbty',
-    version='0.1.0',
+    version='1.0.0',
     packages=find_packages(exclude=('tests',)),
 
     author='akira furukawa',
@@ -11,7 +11,7 @@ setup(
     url='https://github.com/Minguu42/hbty',
 
     description='This is a birthday card generator',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     logn_description_content_type='text/markdown',
     keywords='birthday',
 
