@@ -11,7 +11,7 @@ setup(
     url='https://github.com/Minguu42/hbty',
 
     description='This is a birthday card generator',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     logn_description_content_type='text/markdown',
     keywords='birthday',
 
